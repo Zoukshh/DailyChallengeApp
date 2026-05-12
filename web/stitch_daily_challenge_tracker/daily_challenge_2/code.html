@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-low": "#eff4ff",
+            "surface-container-high": "#dce9ff",
+            "on-secondary-fixed-variant": "#005236",
+            "tertiary-container": "#996100",
+            "on-primary": "#ffffff",
+            "tertiary-fixed": "#ffddb8",
+            "surface-tint": "#0053db",
+            "surface-container-lowest": "#ffffff",
+            "primary-fixed": "#dbe1ff",
+            "tertiary": "#784b00",
+            "primary": "#004ac6",
+            "on-tertiary-fixed-variant": "#653e00",
+            "on-tertiary-fixed": "#2a1700",
+            "primary-fixed-dim": "#b4c5ff",
+            "surface-container": "#e5eeff",
+            "on-background": "#0b1c30",
+            "secondary": "#006c49",
+            "on-secondary-container": "#00714d",
+            "secondary-fixed": "#6ffbbe",
+            "on-primary-container": "#eeefff",
+            "on-secondary": "#ffffff",
+            "on-error": "#ffffff",
+            "outline": "#737686",
+            "surface-dim": "#cbdbf5",
+            "surface-variant": "#d3e4fe",
+            "error": "#ba1a1a",
+            "on-surface": "#0b1c30",
+            "inverse-on-surface": "#eaf1ff",
+            "outline-variant": "#c3c6d7",
+            "error-container": "#ffdad6",
+            "on-secondary-fixed": "#002113",
+            "secondary-fixed-dim": "#4edea3",
+            "inverse-surface": "#213145",
+            "on-primary-fixed-variant": "#003ea8",
+            "background": "#f8f9ff",
+            "on-error-container": "#93000a",
+            "secondary-container": "#6cf8bb",
+            "surface": "#f8f9ff",
+            "on-surface-variant": "#434655",
+            "on-tertiary": "#ffffff",
+            "inverse-primary": "#b4c5ff",
+            "surface-container-highest": "#d3e4fe",
+            "surface-bright": "#f8f9ff",
+            "tertiary-fixed-dim": "#ffb95f",
+            "primary-container": "#2563eb",
+            "on-tertiary-container": "#ffeedd",
+            "on-primary-fixed": "#00174b"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "xs": "8px",
+            "lg": "32px",
+            "margin": "20px",
+            "md": "24px",
+            "sm": "16px",
+            "base": "4px",
+            "xl": "48px",
+            "gutter": "16px"
+          },
+          "fontFamily": {
+            "display-lg": ["Lexend"],
+            "headline-md": ["Lexend"],
+            "title-sm": ["Lexend"],
+            "label-caps": ["Lexend"],
+            "body-md": ["Lexend"],
+            "body-sm": ["Lexend"]
+          },
+          "fontSize": {
+            "display-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+            "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+            "title-sm": ["18px", {"lineHeight": "24px", "fontWeight": "600"}],
+            "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+            "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+            "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background font-body-md text-on-background min-h-screen">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100/50 shadow-sm">
+<nav class="flex justify-between items-center w-full px-6 h-16 max-w-[600px] mx-auto">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full overflow-hidden border-2 border-primary-fixed">
+<img alt="User profile" class="w-full h-full object-cover" data-alt="portrait of a smiling young professional man with short hair in a bright airy studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfJPDSZk8KOZekmCGNRkiXYY7O2OSBT9JrEtd925DLOhJV71pFchveF5rZ5G9E9T4D0D6OAf59VGyOFzX4D8orUaPd7f4Iwif6OCcdvLGKYdUlK9yez3FYrblXVXQXmIHSEQt5wEJiRX9-Bgh518MPLFz27yyHjXLphbrgd84evJA0SLmGD1tvLi3vQz5WaSBcfdae92NjsHOTK8C58NwHjHHs1gV8Am9WLrBqbgWkrQPAKxoXlJ7cohGB9W7lXLb559cspmtQkeI"/>
+</div>
+<span class="font-lexend font-black text-blue-600 text-xl tracking-tight">Daily Challenge</span>
+</div>
+<button class="text-slate-400 active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</nav>
+</header>
+<main class="pt-20 pb-32 px-6 max-w-[600px] mx-auto space-y-lg">
+<!-- Hero Section / Header Message -->
+<section class="space-y-xs pt-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface">Hello, Champion!</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">You're doing great, keep it up!</p>
+</section>
+<!-- Main Challenge Card -->
+<section class="bg-surface-container-lowest rounded-3xl p-lg shadow-[0_4px_20px_0_rgba(0,0,0,0.04)] relative overflow-hidden group">
+<!-- Decorative Background Accent -->
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
+<div class="relative z-10 flex flex-col items-center text-center space-y-md">
+<div class="flex items-center justify-between w-full">
+<span class="font-label-caps text-label-caps text-primary bg-primary-fixed px-3 py-1 rounded-full uppercase">Today's Focus</span>
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[20px]" data-icon="local_fire_department" data-weight="fill" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-title-sm text-title-sm">12 Day Streak</span>
+</div>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface leading-tight">Drink 2L of water</h1>
+<!-- Circular Progress Ring -->
+<div class="relative flex items-center justify-center py-sm">
+<svg class="w-48 h-48 transform -rotate-90">
+<circle class="text-surface-container" cx="96" cy="96" fill="transparent" r="88" stroke="currentColor" stroke-width="12"></circle>
+<circle class="text-primary" cx="96" cy="96" fill="transparent" r="88" stroke="currentColor" stroke-dasharray="552.92" stroke-dashoffset="221.17" stroke-linecap="round" stroke-width="12"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-display-lg text-display-lg text-primary">60%</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Complete</span>
+</div>
+</div>
+<div class="flex gap-4 w-full">
+<button class="flex-1 bg-primary text-on-primary font-title-sm text-title-sm py-4 rounded-2xl shadow-lg shadow-primary/20 active:scale-95 transition-all duration-200 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" data-icon="add_circle">add_circle</span>
+            Log Progress
+          </button>
+</div>
+</div>
+</section>
+<!-- Bento Secondary Grid -->
+<div class="grid grid-cols-2 gap-md">
+<!-- Quick Info 1 -->
+<div class="bg-surface-container-low rounded-2xl p-md space-y-xs flex flex-col">
+<span class="material-symbols-outlined text-secondary" data-icon="history">history</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Yesterday</span>
+<span class="font-title-sm text-title-sm text-on-surface">100% Success</span>
+</div>
+<!-- Quick Info 2 -->
+<div class="bg-surface-container-low rounded-2xl p-md space-y-xs flex flex-col">
+<span class="material-symbols-outlined text-tertiary" data-icon="stars">stars</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Level</span>
+<span class="font-title-sm text-title-sm text-on-surface">Health Hero</span>
+</div>
+</div>
+<!-- Generate Random Challenge Section -->
+<div class="flex flex-col items-center py-md gap-sm">
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center px-lg">Feeling like a different challenge? Mix things up and discover a new habit.</p>
+<button class="flex items-center gap-2 border-2 border-primary-fixed-dim text-primary font-title-sm text-title-sm px-6 py-3 rounded-full hover:bg-primary-fixed/50 transition-colors active:scale-95">
+<span class="material-symbols-outlined" data-icon="shuffle">shuffle</span>
+        Generate Random Challenge
+      </button>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<footer class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[600px] flex justify-around items-center px-4 py-3 pb-8 bg-white/80 backdrop-blur-md border-t border-slate-100/50 shadow-[0_-4px_20px_0_rgba(0,0,0,0.04)] rounded-t-2xl z-50">
+<a class="flex flex-col items-center justify-center bg-blue-50 text-blue-600 rounded-xl px-4 py-1 active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="task_alt">task_alt</span>
+<span class="font-lexend text-[10px] font-medium uppercase tracking-wider">Today</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 px-4 py-1 hover:text-blue-500 active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span class="font-lexend text-[10px] font-medium uppercase tracking-wider">History</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 px-4 py-1 hover:text-blue-500 active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="add_circle">add_circle</span>
+<span class="font-lexend text-[10px] font-medium uppercase tracking-wider">Create</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 px-4 py-1 hover:text-blue-500 active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-lexend text-[10px] font-medium uppercase tracking-wider">Settings</span>
+</a>
+</footer>
+</body></html>
