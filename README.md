@@ -1,4 +1,4 @@
-# 🎯 Daily Challenge - Pure Dart Edition
+# 🎯 Daily Challenge
 
 A beautiful, portable habit-tracking and daily challenge application built with Flutter. This project is a **Pure Dart** implementation, meaning it has zero native plugin dependencies, making it extremely lightweight and compatible with all platforms (Web, Windows, macOS, Linux, iOS, Android) without any system-level configuration.
 
