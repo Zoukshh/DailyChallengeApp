@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<title>Create Custom Challenge</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-low": "#eff4ff",
+                    "surface-container-high": "#dce9ff",
+                    "on-secondary-fixed-variant": "#005236",
+                    "tertiary-container": "#996100",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed": "#ffddb8",
+                    "surface-tint": "#0053db",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed": "#dbe1ff",
+                    "tertiary": "#784b00",
+                    "primary": "#004ac6",
+                    "on-tertiary-fixed-variant": "#653e00",
+                    "on-tertiary-fixed": "#2a1700",
+                    "primary-fixed-dim": "#b4c5ff",
+                    "surface-container": "#e5eeff",
+                    "on-background": "#0b1c30",
+                    "secondary": "#006c49",
+                    "on-secondary-container": "#00714d",
+                    "secondary-fixed": "#6ffbbe",
+                    "on-primary-container": "#eeefff",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "outline": "#737686",
+                    "surface-dim": "#cbdbf5",
+                    "surface-variant": "#d3e4fe",
+                    "error": "#ba1a1a",
+                    "on-surface": "#0b1c30",
+                    "inverse-on-surface": "#eaf1ff",
+                    "outline-variant": "#c3c6d7",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed": "#002113",
+                    "secondary-fixed-dim": "#4edea3",
+                    "inverse-surface": "#213145",
+                    "on-primary-fixed-variant": "#003ea8",
+                    "background": "#f8f9ff",
+                    "on-error-container": "#93000a",
+                    "secondary-container": "#6cf8bb",
+                    "surface": "#f8f9ff",
+                    "on-surface-variant": "#434655",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#b4c5ff",
+                    "surface-container-highest": "#d3e4fe",
+                    "surface-bright": "#f8f9ff",
+                    "tertiary-fixed-dim": "#ffb95f",
+                    "primary-container": "#2563eb",
+                    "on-tertiary-container": "#ffeedd",
+                    "on-primary-fixed": "#00174b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xs": "8px",
+                    "lg": "32px",
+                    "margin": "20px",
+                    "md": "24px",
+                    "sm": "16px",
+                    "base": "4px",
+                    "xl": "48px",
+                    "gutter": "16px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Lexend"],
+                    "headline-md": ["Lexend"],
+                    "title-sm": ["Lexend"],
+                    "label-caps": ["Lexend"],
+                    "body-md": ["Lexend"],
+                    "body-sm": ["Lexend"]
+            },
+            "fontSize": {
+                    "display-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "title-sm": ["18px", {"lineHeight": "24px", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md min-h-screen pb-32">
+<!-- TopAppBar Shell -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-100/50 shadow-sm">
+<div class="flex justify-between items-center w-full px-6 h-16 max-w-[600px] mx-auto">
+<div class="flex items-center gap-4">
+<button class="active:scale-95 transition-transform duration-200 text-slate-400">
+<span class="material-symbols-outlined">close</span>
+</button>
+<h1 class="font-lexend font-semibold text-lg text-blue-600">Create Challenge</h1>
+</div>
+<div class="w-8 h-8 rounded-full overflow-hidden border-2 border-surface-container-high">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="Close up portrait of a smiling young professional man with a clean beard in soft natural studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSW3eRlhITzclzyKIY3sbFTTvG2dvazRaFqEO_3049dZmrYIbNQcDgexsJJNXCGf9X2X7uVZ89hHxY1SnPjeUpgJJ_Za_w2AgG6gq7bIM9XpBozux51_xCvyQOsW7SWb7KDrcQi-fydppNcoFZF-Kb92xv8oXDNa381x7phvq955IgS_Mo-HTqeurMnLfZkZV2EJilhssY_GfaMhupafU7lMJ68eleCJ2f2RmAl1-tQbGi-uu4aCSKOt5AJQ6YEG5aGXtH7NyoAmQ"/>
+</div>
+</div>
+</header>
+<main class="max-w-[600px] mx-auto px-6 pt-24 pb-12">
+<!-- Visual Anchor -->
+<div class="relative w-full h-48 rounded-3xl overflow-hidden mb-lg shadow-sm">
+<img alt="Challenge Hero" class="w-full h-full object-cover" data-alt="Minimalist desk setup with a journal, a small plant, and soft morning sunlight creating long shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbrMR5cjWEvzQuEtPE8EHg8Hc2VrMGayW83o40CRJiQ8ZgTK2MDsljblP1krmR3W7sBTuRA9nL545Pp257Kq6K2M9c-vKN3eI6CnZ8AZXzY4zfkdTMWhTBHQc3ZzMnVutW1f9HS4cL47VwpvIihJXyFd-xbz53N6d_NwGQr7NtSUOiN91pSITwUV4RJeZO7MI6OiVWrCA_auLQq_tTy6YS1NIJP4M09-8V87tER3l_jYZwrTNU0xuSz4JKs1O_rS1iskZZlHl6uEE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<div class="absolute bottom-4 left-6">
+<p class="text-white font-label-caps uppercase tracking-widest opacity-90">Momentum Builder</p>
+<h2 class="text-white font-headline-md">Define Your Next Win</h2>
+</div>
+</div>
+<section class="space-y-lg">
+<!-- Title Input -->
+<div class="space-y-xs">
+<label class="font-label-caps text-on-surface-variant block ml-1">Challenge Title</label>
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_0_rgba(0,0,0,0.04)] overflow-hidden">
+<input class="w-full bg-transparent border-none px-md py-4 focus:ring-0 text-on-surface font-title-sm placeholder:text-slate-300" placeholder="e.g., Morning Deep Work" type="text"/>
+</div>
+</div>
+<!-- Description Input -->
+<div class="space-y-xs">
+<label class="font-label-caps text-on-surface-variant block ml-1">Short Description</label>
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_0_rgba(0,0,0,0.04)] overflow-hidden">
+<textarea class="w-full bg-transparent border-none px-md py-4 focus:ring-0 text-on-surface font-body-md placeholder:text-slate-300 resize-none" placeholder="What is the primary goal of this challenge?" rows="3"></textarea>
+</div>
+</div>
+<!-- Category Picker -->
+<div class="space-y-sm">
+<label class="font-label-caps text-on-surface-variant block ml-1">Category</label>
+<div class="grid grid-cols-3 gap-sm">
+<!-- Health -->
+<button class="flex flex-col items-center justify-center gap-xs p-md rounded-2xl bg-surface-container-lowest shadow-[0_4px_20px_0_rgba(0,0,0,0.04)] border-2 border-transparent active:scale-95 transition-all">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant">Health</span>
+</button>
+<!-- Learning -->
+<button class="flex flex-col items-center justify-center gap-xs p-md rounded-2xl bg-primary-container shadow-[0_8px_16px_rgba(37,99,235,0.2)] border-2 border-primary-container active:scale-95 transition-all">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+<span class="font-label-caps text-[10px] text-white">Learning</span>
+</button>
+<!-- Productivity -->
+<button class="flex flex-col items-center justify-center gap-xs p-md rounded-2xl bg-surface-container-lowest shadow-[0_4px_20px_0_rgba(0,0,0,0.04)] border-2 border-transparent active:scale-95 transition-all">
+<span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant">Focus</span>
+</button>
+</div>
+</div>
+<!-- Settings Grid -->
+<div class="grid grid-cols-2 gap-sm">
+<div class="bg-surface-container-lowest p-md rounded-2xl shadow-[0_4px_20px_0_rgba(0,0,0,0.04)]">
+<span class="material-symbols-outlined text-slate-400 mb-xs">calendar_today</span>
+<p class="font-label-caps text-slate-400 text-[10px]">Duration</p>
+<p class="font-title-sm text-on-surface">30 Days</p>
+</div>
+<div class="bg-surface-container-lowest p-md rounded-2xl shadow-[0_4px_20px_0_rgba(0,0,0,0.04)]">
+<span class="material-symbols-outlined text-slate-400 mb-xs">notifications_active</span>
+<p class="font-label-caps text-slate-400 text-[10px]">Reminder</p>
+<p class="font-title-sm text-on-surface">8:00 AM</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Action Bar -->
+<footer class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[600px] p-6 pb-safe bg-gradient-to-t from-background via-background to-transparent">
+<button class="w-full bg-primary-container text-white py-4 px-lg rounded-full font-lexend font-semibold text-lg shadow-[0_12px_24px_rgba(37,99,235,0.3)] active:scale-95 transition-all flex items-center justify-center gap-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            Save Challenge
+        </button>
+</footer>
+<!-- BottomNavBar (Hidden on transactional pages but kept as structure guide if needed elsewhere) -->
+<!-- Suppressed for transactional/focused journey as per "The Destination Rule" -->
+</body></html>

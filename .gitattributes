@@ -1,0 +1,29 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Ignore non-Dart boilerplate from Language Statistics (Linguist) globally
+# This will force the repository to show as ~100% Dart
+**/android/** linguist-vendored linguist-detectable=false
+**/ios/** linguist-vendored linguist-detectable=false
+**/windows/** linguist-vendored linguist-detectable=false
+**/linux/** linguist-vendored linguist-detectable=false
+**/macos/** linguist-vendored linguist-detectable=false
+**/web/** linguist-vendored linguist-detectable=false
+**/test/** linguist-vendored linguist-detectable=false
+**/build/** linguist-vendored linguist-detectable=false
+**/.dart_tool/** linguist-vendored linguist-detectable=false
+
+# Exclude specific file types globally to be safe
+*.html linguist-vendored linguist-detectable=false
+*.cpp linguist-vendored linguist-detectable=false
+*.h linguist-vendored linguist-detectable=false
+*.cmake linguist-vendored linguist-detectable=false
+*.swift linguist-vendored linguist-detectable=false
+*.kt linguist-vendored linguist-detectable=false
+*.gradle linguist-vendored linguist-detectable=false
+*.xml linguist-vendored linguist-detectable=false
+*.plist linguist-vendored linguist-detectable=false
+*.json linguist-vendored linguist-detectable=false
+pubspec.lock linguist-vendored linguist-detectable=false
+
+
